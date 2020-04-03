@@ -6,6 +6,8 @@ video from your YouTube channel, filling up the entire browser window.
 Useful for all of those cases where explaining *the whole of YouTube* is just a
 little too much for your audience 😉
 
+An example lives here: https://timendus.github.io/simple-player
+
 ## Step 1: Clone
 
 Fork this repository in your own Github account (button on the top right of this
@@ -19,9 +21,10 @@ right) and edit this bit:
 ```javascript
 /** CONFIG **/
 
-var title      = "Timendus' latest video";
-var channel_id = "Timendus";
-var domain     = "timendus.github.io";
+// Required
+var title     = "Timendus' latest video";
+var channelId = "Timendus";
+var domain    = "timendus.github.io";
 ```
 
 `title` can be whatever you want to show in the browser tab.
@@ -32,6 +35,8 @@ browser URL bar when you visit your channel page.
 `domain` should be the domain you host this page on. If you host it on Github
 pages, as per this instruction, then change it it `<your username>.github.io`.
 
+There are also some optional configuration options to play with.
+
 Commit your changes to the master branch.
 
 ## Step 3: Hosting
@@ -40,5 +45,5 @@ Configure [Github Pages](https://pages.github.com/) for your repository: Go to
 the **Settings** tab and scroll down to the **GitHub Pages** section. Then
 select the **master branch** source and click on the **Save** button.
 
-Github should now tell you where your page is hosted. You can also add your own
-domain here.
+Github should now tell you where your page is hosted. You can also configure
+your own custom domain there.
